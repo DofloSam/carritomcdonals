@@ -1,0 +1,203 @@
+/* Estilos generales */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Títulos */
+h2 {
+    text-align: center;
+    color: #333;
+    font-weight: 600;
+}
+
+/* Formularios */
+form {
+    width: 100%;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+/* 🔴🟡 Botones con colores de McDonald's */
+button {
+    background-color: #ffcc00; /* Amarillo McDonald's */
+    color: black;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff9900;
+}
+
+/* Botón Volver */
+.boton-volver {
+    background-color: #db0000; /* Rojo McDonald's */
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.boton-volver:hover {
+    background-color: #a80000;
+}
+
+/* Tabla de productos */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 14px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #db0000;
+    color: white;
+}
+
+/* Imágenes de productos */
+img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/* Acciones: Editar y Eliminar */
+.acciones {
+    display: flex;
+    gap: 5px; /* Espacio entre los botones */
+}
+
+.eliminar, .editar {
+    padding: 6px 10px;
+    font-size: 0.9rem;
+    border-radius: 6px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.eliminar {
+    background-color: #db0000; /* Rojo McDonald's */
+    color: white;
+}
+
+.editar {
+    background-color: #ffcc00; /* Amarillo McDonald's */
+    color: black;
+}
+
+.eliminar:hover {
+    background-color: #a80000;
+}
+
+.editar:hover {
+    background-color: #ff9900;
+}
+
+
+/* 🛠️ Modal con diseño más atractivo */
+/* Estilos para el Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-contenido {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Ajuste del ancho de los inputs dentro del modal */
+.modal-contenido input, 
+.modal-contenido select, 
+.modal-contenido textarea {
+    width: calc(100% - 20px); /* Se ajusta para que no sobresalga */
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+/* Botones en el modal */
+.modal-botones {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.modal-botones button {
+    width: 48%;
+}
+
+/* Estilo para la "X" de cierre */
+.cerrar {
+    float: right;
+    font-size: 24px;
+    cursor: pointer;
+    color: #db0000;
+    font-weight: bold;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+}
+
+.cerrar:hover {
+    color: #a80000;
+}
