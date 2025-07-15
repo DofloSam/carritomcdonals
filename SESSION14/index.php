@@ -19,7 +19,7 @@
 	
 
 
-			<h2>Nuestro Menú</h2>
+			<h2>Nuestro Menú todos los dias del año 😋</h2>
 			<div class="productos">
 		    <?php
 		    $stmt = $conn->query("SELECT * FROM productos");
