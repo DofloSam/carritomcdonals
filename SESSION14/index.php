@@ -7,13 +7,13 @@
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 
-	<title>McDonald's - Menú</title>
+	<title>McDonald's - Mc Menú</title>
 </head>
 <body>
 	<div class="container">
 		<div class="header">
     <h1 style="text-align: left">McDonald's</h1>
-    <a href="carrito.php" class="carrito-link">Carrito 🛒(<?php echo count($_SESSION['carrito']); ?>)</a>
+    <a href="carrito.php" class="carrito-link">CARRITO 🛒(<?php echo count($_SESSION['carrito']); ?>)</a>
     <a href="agregar_producto.php" class="boton-agregar">Añadir Producto ➕</a>
 </div>
 	
